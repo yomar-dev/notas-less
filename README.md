@@ -22,6 +22,51 @@ Las variables se declaran con **@** seguido del nombre.
 ~~~
 
 
+### Anidaciones ###
+
+Nos permite incluir estilos de un elemento dentro de otro.
+
+*Ejemplo:* <br>
+
+**Entrada:**
+
+~~~
+p{
+	color: #333;
+
+	a{
+		color: skyblue;
+		font-weight: bold;
+
+		&:hover{
+			background-color: #222;
+			cursor: pointer;			
+		}
+	}
+}
+~~~
+
+**Salida:**
+
+~~~
+p {
+  color: #333;
+}
+
+p a {
+  color: skyblue;
+  font-weight: bold;
+}
+
+p a:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+~~~
+
+
+
+
 ### Enlaces de interes ###
 
 [Documentación Oficial de LESS](http://lesscss.org/)
