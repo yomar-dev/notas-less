@@ -65,6 +65,46 @@ p a:hover {
 ~~~
 
 
+### Mixins ###
+
+Son un conjunto de propiedades CSS agrupadas. Esto nos permite utilizar el grupo en sí y no repetir mil veces las mismas propiedades.
+
+*Ejemplo:* <br>
+
+**Entrada:**
+
+~~~
+.max-width(){
+	max-width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section{
+	.max-width;
+}
+
+.container{
+	.max-width;
+}
+~~~
+
+**Salida:**
+
+~~~
+.section {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+~~~
+
+
 
 
 ### Enlaces de interes ###
