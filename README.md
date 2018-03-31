@@ -105,6 +105,37 @@ Son un conjunto de propiedades CSS agrupadas. Esto nos permite utilizar el grupo
 ~~~
 
 
+### Mixins Paramétricos ###
+
+Son aquellos que reciben paramétros.
+
+*Ejemplo:* <br>
+
+**Entrada:**
+
+~~~
+.border-radius(@radius) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+ 
+.sidebar {
+	.border-radius(4px);
+}
+~~~
+
+**Salida:**
+
+~~~
+.sidebar {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+~~~
+
+
 
 
 ### Enlaces de interes ###
